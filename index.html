@@ -1,49 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Super Bowl Food Fight</title>
     <style>
-        body { margin: 0; font-family: sans-serif; background: #f4f4f4; }
-        .header { 
-            padding: 60px 20px; 
-            background: white; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        /* This part forces the scrollbar to work and styles your text */
+        html, body { 
+            overflow-y: auto !important; 
+            height: auto !important; 
+            margin: 0 !important; 
         }
-        h1 { margin-top: 0; color: #b91d1d; } /* Football Red */
-        .map-container {
-            width: 100%;
-            height: 800px; /* Adjust height as you like */
-            border: none;
-            margin-top: 20px;
+        #readme-top-section {
+            position: relative;
+            z-index: 9999; /* Keeps text above map */
+            background: white;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: sans-serif;
+            border-bottom: 2px solid #ddd;
+        }
+        /* This forces the map to stay below the text */
+        #htmlwidget_container {
+            position: relative !important;
+            height: 800px !important;
+            top: 0 !important;
         }
     </style>
-</head>
-<body>
-
-    <div class="header">
-        <h1>Super Bowl Food Fight: Pizza vs. Wings</h1>
-        <p>As millions of fans prepare for the Super Bowl, the long-standing debate over the ultimate game-day meal—<strong>pizza vs. wings</strong>—intensifies.</p>
-        
-        <h3>Data Collection</h3>
-        <p>To build an audience representative of Superbowl enthusiasts, we utilized mobile foot traffic data from geofencing visitors to ticketed football events.</p>
-        
-        <ul>
-            <li><strong>Team Pizza:</strong> Domino’s and Pizza Hut.</li>
-            <li><strong>Team Wings:</strong> Wingstop and Buffalo Wild Wings.</li>
-        </ul>
-
-        <h3>The Results</h3>
-        <p>Final breakdown: 104 DMAs prefer Pizza, 103 DMAs prefer Wings. 3 DMAs were neutral.</p>
-        
-        <p><strong>Scroll down to explore the interactive map below!</strong></p>
-    </div>
-
-    <iframe src="map.html" class="map-container"></iframe>
-
-</body>
-</html>
+	<!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8" />
 <title>leaflet</title>
 <script>(function() {
@@ -4101,3 +4085,17 @@ function asArray(value) {
 <script type="application/htmlwidget-sizing" data-for="htmlwidget-85543a0330e35259980a">{"viewer":{"width":"100%","height":400,"padding":0,"fill":true},"browser":{"width":"100%","height":400,"padding":0,"fill":true}}</script>
 </body>
 </html>
+<div id="readme-top-section" style="position: absolute; top: 0; left: 0; right: 0;">
+    <h1 style="margin-top: 0; color: #b91d1d;">Super Bowl Food Fight: Pizza vs. Wings</h1>
+    <p>As millions of fans prepare for the Super Bowl, the long-standing debate over the ultimate game-day meal—<strong>pizza vs. wings</strong>—intensifies. We set out to answer this question using data-driven insights by analyzing foot traffic patterns across the United States.</p>
+    <p>The final breakdown of DMA preferences was as follows: <strong>104 DMAs prefer Pizza, 103 DMAs prefer Wings.</strong></p>
+    <p style="text-align: center; font-weight: bold; margin-top: 30px; color: #666;">Scroll Down for Interactive Map ↓</p>
+</div>
+
+<script>
+    // This script moves your README to the top of the body automatically
+    window.onload = function() {
+        var readme = document.getElementById('readme-top-section');
+        document.body.insertBefore(readme, document.body.firstChild);
+    };
+</script>
