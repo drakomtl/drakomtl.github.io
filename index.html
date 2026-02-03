@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<style>
+<style>
   html, body {
     overflow-y: auto !important;
     height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #htmlwidget-85543a0330e35259980a {
+    height: 800px !important; 
+    width: 100% !important;
+    position: relative !important;
   }
   #htmlwidget_container {
+    height: auto !important;
     position: relative !important;
   }
 </style>
@@ -4059,21 +4067,23 @@ function asArray(value) {
 </script>
 
 </head>
-<body style="background-color: white; overflow-y: auto !important;">
+<body style="background-color: white;">
 
-  <div id="readme-header" style="position: relative; z-index: 2000; background: white; padding: 40px 20px; border-bottom: 2px solid #ddd; font-family: sans-serif;">
-      <div style="max-width: 800px; margin: 0 auto; color: #333; line-height: 1.6;">
-          <h1 style="margin-top: 0; color: #000;">Super Bowl Food Fight: Pizza vs. Wings</h1>
-          <p>As millions of fans prepare for the Super Bowl... [REST OF YOUR TEXT]</p>
-          <p style="text-align: center; font-weight: bold;">Scroll down for the Interactive Map ↓</p>
-      </div>
+  <div style="padding: 50px 20px; max-width: 800px; margin: 0 auto; font-family: sans-serif;">
+     <h1>Super Bowl Food Fight: Pizza vs. Wings</h1>
+     <p>As millions of fans prepare for the Super Bowl, the long-standing debate over the ultimate game-day meal—pizza vs. wings—intensifies. While personal preferences may vary, we set out to answer this question using data-driven insights by analyzing foot traffic patterns across the United States.
+
+Data Collection: Mapping Superbowl Fans’ Preferences To build an audience representative of Superbowl enthusiasts, we utilized mobile foot traffic data from fully anonymized, CCPA-compliant SDK sources. This was done by geofencing visitors to ticketed football events, ensuring that our dataset captures individuals with demonstrated engagement in live football games. Next, we examined the fast-food chains most over-indexed by this audience across the 210 Designated Market Areas (DMAs) in the United States. For this analysis, we defined:Team Pizza: Represented by Domino’s and Pizza Hut locations.Team Wings: Represented by Wingstop and Buffalo Wild Wings locations.
+
+Indexation and Preference Calculation The preference for pizza vs. wings was determined based on the over-indexation of yearly unique visitors to these restaurant chains, adjusted for location density within each DMA. This means that DMAs where Superbowl fans disproportionately visited pizza chains more than the national average were classified as pizza-preferred, while those with a higher relative share of wing restaurant visitors were labeled wing-preferred.
+
+By leveraging Drako's comprehensive POI database, we ensured robust location coverage across all regions. The final breakdown of DMA preferences was as follows: 104 DMAs prefer Pizza, 103 DMAs prefer Wings. 3 DMAs were neutral or inconclusive.
+
+Key Findings: A Nation Divided Our analysis revealed that Seattle aligns more with pizza, while New Englang is split, but leans towards wings. To explore where the rest of the country stands, check out our interactive map below and see which side your DMA falls on!</p>
+     <p style="text-align:center; font-weight:bold; margin-top:40px;">SCROLL DOWN FOR MAP ↓</p>
   </div>
-
-  <div id="htmlwidget_container" style="position: relative; width: 100%; height: 800px; clear: both; z-index: 1;">
-      <div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" 
-           id="htmlwidget-85543a0330e35259980a" 
-           style="width:100%; height:100%;">
-      </div>
+  <div id="htmlwidget_container">
+    <div class="leaflet html-widget" id="htmlwidget-85543a0330e35259980a"></div>
   </div>
 
   <script type="application/json" data-for="htmlwidget-85543a0330e35259980a">
@@ -4095,6 +4105,7 @@ Key Findings: A Nation Divided Our analysis revealed that Seattle aligns more wi
 </div>
 </body>
 </html>
+
 
 
 
