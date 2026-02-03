@@ -7,7 +7,8 @@ Next, we examined the fast-food chains most over-indexed by this audience across
 
 Indexation and Preference Calculation
 The preference for pizza vs. wings was determined based on the over-indexation of yearly unique visitors to these restaurant chains, adjusted for location density within each DMA. This means that DMAs where Superbowl fans disproportionately visited pizza chains more than the national average were classified as pizza-preferred, while those with a higher relative share of wing restaurant visitors were labeled wing-preferred.
-By leveraging Drako's comprehensive POI database, we ensured robust location coverage across all regions. The final breakdown of DMA preferences was as follows:104 DMAs prefer Pizza103 DMAs prefer Wings3 DMAs were neutral or inconclusive
+
+By leveraging Drako's comprehensive POI database, we ensured robust location coverage across all regions. The final breakdown of DMA preferences was as follows: 104 DMAs prefer Pizza, 103 DMAs prefer Wings. 3 DMAs were neutral or inconclusive.
 
 Key Findings: A Nation Divided
 Our analysis revealed that Seattle aligns more with pizza, while New Englang is split, but leans towards wings. To explore where the rest of the country stands, check out our interactive map below and see which side your DMA falls on!
